@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "IE 9"],
+          "node": "current"
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3.10"
+      }
+    ],
+    "@babel/preset-typescript",
+    "minify"
+  ],
+  "sourceMaps": "inline",
+  "comments": false
+}

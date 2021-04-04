@@ -1,0 +1,30 @@
+{
+  "name": "language-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:types && npm run build:code",
+    "build:code": "babel ./src -d ./dist --extensions \".ts,.tsx\"",
+    "build:types": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-preset-minify": "^0.5.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "core-js": "^3.10.0"
+  }
+}

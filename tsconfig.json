@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "lib": ["ES2016"],
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "isolatedModules": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
